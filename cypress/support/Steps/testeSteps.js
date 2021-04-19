@@ -10,7 +10,7 @@ When("preencher campo primeiro nome", ( )=> {
     Pagina.preencherCampoPrimeiroNome();    
 })
 And("preencho o campo segundo nome", () => {
-    Pagina.preencherCampoSegundoNome;
+    Pagina.preencherCampoSegundoNome();
 })
 And("preencho o campo endereco", ()=>{
     Pagina.preencherCampoEndereco();

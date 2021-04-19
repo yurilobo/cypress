@@ -30,11 +30,11 @@ class TestePage {
     }
 
     preencherCampoSexo(){
-        cy.xpath(Elementos.campoSexo()).fist().click()
+        cy.get(Elementos.campoSexo()).first().click()
     }
 
     preencherCampoHobbies(){
-        cy.xpath(Elementos.campoHobbies()).click()
+        cy.get(Elementos.campoHobbies()).check().should('be.checked').and('have.value','Movies').click()
     }
 
     selecionarLanguage(){
