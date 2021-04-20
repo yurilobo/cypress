@@ -9,7 +9,7 @@ Feature: Automação de formulário
         And preencho o campo telefone
         And clica na opcao male
         And clico na opcao movies
-        And seleciono a opcao portugese
+        And seleciono a opcao portugues e ingles
         And preencho o campo senha
         And preencho o campo confirmar senha
         And clico no botão Refresh

@@ -32,8 +32,8 @@ And("clico na opcao movies", ()=>{
     Pagina.preencherCampoHobbies();
 })
 
-And("seleciono a opcao portugues", ()=>{
-    Pagina.selecionarLanguage();   
+And("seleciono a opcao portugues e ingles", ()=>{
+    Pagina.selecionarLinguas();   
 })
 And("seleciono a opcao microsoft oficce", ()=>{
     Pagina.selecionarSkills();

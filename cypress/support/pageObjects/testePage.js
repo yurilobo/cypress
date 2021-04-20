@@ -34,14 +34,15 @@ class TestePage {
     }
 
     preencherCampoHobbies(){
-        cy.get(Elementos.campoHobbies()).check().should('be.checked').and('have.value','Movies').click()
+        //cy.get(Elementos.campoHobbies()).check().should('be.checked').and('have.value','Movies').click()
+        cy.get(Elementos.campoHobbies()).check(['Movies'])
     }
 
-    selecionarLanguage(){
+    selecionarLinguas(){
         cy.get(Elementos.campoLinguagem()).click()
-        cy.get(':nth-child(8) > .ui-corner-all')
-        .trigger('mousemove').click()
-        cy.get('h1').click()
+        cy.get('.ui-corner-all').contains('Portuguese').click()
+        cy.get('.ui-corner-all').contains('English').click()
+       
     }
 
     selecionarSkills(){
