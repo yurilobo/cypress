@@ -12,6 +12,10 @@ Feature: Automação de formulário
         And seleciono a opcao portugues e ingles 
         And seleciono o pais
         And seleciono a skill
+        And seleciono a opcao 
+        And seleciono o ano 
+        And seleciono o mes 
+        And seleciono o dia
         And preencho o campo senha
         And preencho o campo confirmar senha
         And clico no botão Refresh

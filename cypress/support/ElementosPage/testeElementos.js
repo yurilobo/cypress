@@ -32,7 +32,7 @@ class testElementos{
         return '#Skills'
     }
     campoLocal = () => {
-        return '.select2-selection'
+        return '#countries'
     }
     campoAno = () => { 
         return '#yearbox'

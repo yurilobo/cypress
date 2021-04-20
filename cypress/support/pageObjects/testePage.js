@@ -30,11 +30,11 @@ class TestePage {
     }
 
     preencherCampoSexo(){
-        cy.get(Elementos.campoSexo()).first().click()
+        cy.get(Elementos.campoSexo()).check('Male')
     }
 
     preencherCampoHobbies(){
-        cy.get(Elementos.campoHobbies()).check(['Movies']).click()
+        cy.get(Elementos.campoHobbies()).check(['Movies'])
     }
 
 
@@ -46,7 +46,7 @@ class TestePage {
     }
     escolherLocalizacao(){
         cy.get(Elementos.campoPais()).click({force: true})
-        cy.get('.select2-search__field').type('ind').click()
+        cy.get('.select2-search__field').type('aus').click()
         cy.get('.select2-search__field').type('{enter}')
     }
     selecionoSkill(){
@@ -55,9 +55,8 @@ class TestePage {
     }
        
     selecionarLocalizacao(){
-        cy.get(Elementos.campoLocal()).click()
-        cy.get('#select2-country-results > :nth-child(2)')
-        .trigger('mousemove').click()
+        cy.get(Elementos.campoLocal()).select('Brazil')
+        
     }
     selecionarAno(){
         cy.get(Elementos.campoAno()).select('1995')

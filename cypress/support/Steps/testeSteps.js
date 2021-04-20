@@ -43,8 +43,8 @@ And("seleciono o pais", ()=>{
 And("seleciono a skill",() => {
     Pagina.selecionoSkill();
 })
-And("seleciono a opcao ", ()=>{
-    Pagina.selecionarLocalizacaos();
+And("seleciono a opcao ", () =>{
+    Pagina.selecionarLocalizacao();
 })
 And("seleciono o ano", ()=>{
     Pagina.selecionarAno();
