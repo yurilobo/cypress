@@ -34,24 +34,24 @@ class TestePage {
     }
 
     preencherCampoHobbies(){
-        //cy.get(Elementos.campoHobbies()).check().should('be.checked').and('have.value','Movies').click()
-        cy.get(Elementos.campoHobbies()).check(['Movies'])
+        cy.get(Elementos.campoHobbies()).check(['Movies']).click()
     }
 
+
     selecionarLinguas(){
-        cy.get(Elementos.campoLinguagem()).click()
+        cy.get(Elementos.campoLinguagem()).click({force: true})
         cy.get('.ui-corner-all').contains('Portuguese').click()
         cy.get('.ui-corner-all').contains('English').click()
        
     }
-
-    selecionarSkills(){
-        cy.wait(1000)
-        cy.get(Elementos.campoSkills()).select('Microsoft Office', {force: true})
-    }
-   
     escolherLocalizacao(){
-        cy.get(Elementos.campoPais()).select('Brazil')
+        cy.get(Elementos.campoPais()).click({force: true})
+        cy.get('.select2-search__field').type('ind').click()
+        cy.get('.select2-search__field').type('{enter}')
+    }
+    selecionoSkill(){
+       
+        cy.get(Elementos.campoSkill()).select("Android")       
     }
        
     selecionarLocalizacao(){
@@ -70,11 +70,11 @@ class TestePage {
          cy.get(Elementos.campoDia()).select('29')
      }
     preencherCampoSenha(){
-        cy.xpath(Elementos.campoSenha()).type('987654321')
+        cy.get(Elementos.campoSenha()).type('987654321')
     }
 
     preencherCampoConfirmarSenha(){
-        cy.xpath(Elementos.campoConfirmarSenha()).type('987654321')
+        cy.get(Elementos.campoConfirmarSenha()).type('987654321')
     }
     
     clicarbotaoRefresh(){

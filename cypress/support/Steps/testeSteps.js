@@ -27,19 +27,21 @@ And("preencho o campo telefone", ()=>{
 And("clica na opcao male", ()=>{
     Pagina.preencherCampoSexo();
 })
-
 And("clico na opcao movies", ()=>{
     Pagina.preencherCampoHobbies();
 })
 
+
+
 And("seleciono a opcao portugues e ingles", ()=>{
     Pagina.selecionarLinguas();   
 })
-And("seleciono a opcao microsoft oficce", ()=>{
-    Pagina.selecionarSkills();
-})
-And("seleciono a opcao bazil", ()=>{
+
+And("seleciono o pais", ()=>{
     Pagina.escolherLocalizacao();
+})
+And("seleciono a skill",() => {
+    Pagina.selecionoSkill();
 })
 And("seleciono a opcao ", ()=>{
     Pagina.selecionarLocalizacaos();

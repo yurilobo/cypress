@@ -20,14 +20,16 @@ class testElementos{
     campoHobbies = () => {
         return '#checkbox2'
     }
+   
     campoLinguagem = () => {
         return '#msdd' 
     }
-    campoSkills = () => {
-        return '#Skills' 
-    }
+    
     campoPais = () => {
-        return '#countries' 
+        return '[role=combobox]' 
+    }
+    campoSkill =() => {
+        return '#Skills'
     }
     campoLocal = () => {
         return '.select2-selection'
